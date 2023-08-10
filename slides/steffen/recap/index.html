@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.4.1">
 <title data-rh="true">Programmieren mit Java</title><meta data-rh="true" property="og:title" content="Programmieren mit Java"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jappuccini.github.io/java-docs/slides/steffen/recap"><meta data-rh="true" name="docusaurus_locale" content="de"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="de"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><link data-rh="true" rel="icon" href="/java-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://jappuccini.github.io/java-docs/slides/steffen/recap"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/recap" hreflang="de"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/recap" hreflang="x-default"><link rel="stylesheet" href="/java-docs/assets/css/styles.b59ae849.css">
-<link rel="preload" href="/java-docs/assets/js/runtime~main.82b0addd.js" as="script">
+<link rel="preload" href="/java-docs/assets/js/runtime~main.01c119b2.js" as="script">
 <link rel="preload" href="/java-docs/assets/js/main.6390ef24.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -173,6 +173,7 @@
     car = cars.get(0); // lesen aus der Liste
     cars.set(2,'Alfa'); // speichern in der Liste
     int amountOfItems = cars.size();
+    cars.remove(1); // löschen aus der Liste
   }
 </code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klassen und Objekte</h2></section><section><h2>Klassen</h2><span class="fragment">Eine Klasse beschreibt gleichartige Objekte durch</span><ul><li class="fragment">Attribute</li><li class="fragment">Methoden</li></ul></section><section><h2>Beispiel Klasse</h2><pre><code class="java">public class Human {
   public String firstName;
@@ -185,7 +186,7 @@
   steffen.firstName = "Steffen";
   steffen.lastName = "Merk";
   String fullName = steffen.getFullName();
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Konstruktor</h2></section><section><h2>Konstruktor</h2><ul><li class="fragment">beschreibt die Initialisierung eines Objektes</li><li class="fragment">Konstruktoren können Überladen werden</li></ul></section><section><pre><code class="java">public class Car {
+</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Konstruktor</h2><ul><li class="fragment">beschreibt die Initialisierung eines Objektes</li><li class="fragment">Konstruktoren können Überladen werden</li></ul></section><section><pre><code class="java">public class Car {
   private String color;
   private char engineType;
 
@@ -314,7 +315,7 @@ public class MonsterDog extends Dog {
     this.name = name; // funktioniert nicht
   }
 }
-</code></pre><p>Das Attribut kann nur im Konstruktor geändert werden.</p></section><section><pre><code class="java">Dog bello = new Dog();
+</code></pre><p>Das Attribut kann nur im Konstruktor geändert werden.</p></section><section><pre><code class="java">Dog bello = new Dog("Marianna");
 bello.name = "Steffen"; // funktioniert nicht
 
 public class MonsterDog extends Dog {
@@ -402,7 +403,7 @@ public class MonsterDog extends Dog {
  //...
 }
 </code></pre></section><section><h2>Static Modifier - Methode</h2><pre><code class="java">public class Dog {
-  public static hasHat = ture;
+  public static hasHat = true;
   public static isCool = true;
   public static boolean isCoolAndHasHat() {
     return Dog.isCool && Dog.hasHat;
@@ -423,7 +424,7 @@ public class MonsterDog extends Dog {
 }
 </code></pre></section><section><h2>Abstract Modifier - Methode</h2><pre><code class="java">public abstract class Animal {
   //...
-  public abstract void makeSound();{
+  public abstract void makeSound();
 }
 </code></pre><p>Die Methode muss von der erbenden Klasse implementiert werden. Abstrakte Methoden können nur in abstrakten Klassen definiert werden.</p></section><section><pre><code class="java">public class MonsterDog extends Dog {
  // funktioniert nicht, makeSound muss implementiert werden
@@ -440,7 +441,7 @@ public class MonsterDog extends Dog {
  }
  
  public boolean isBinary() {
-   return this === Gender.MALE || this === Gender.FEMALE;
+   return this == Gender.MALE || this == Gender.FEMALE;
  }
 }
 </code></pre></section><section><h2>Enumeration als Typ verwenden</h2><pre><code class="java">public class Human {
@@ -535,7 +536,7 @@ Collections.sort(developers, new AgeAscComparator());
   }
 }
 </code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klassendiagramme (Doku)</h2></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klausurbesprechung</h2></section></section><section><section><h2>Rest of the day</h2><ul><li class="fragment">Wiederholung Java I</li><li class="fragment">Entwicklungsumgebung einrichten</li></ul></section></section></div></div></div>
-<script src="/java-docs/assets/js/runtime~main.82b0addd.js"></script>
+<script src="/java-docs/assets/js/runtime~main.01c119b2.js"></script>
 <script src="/java-docs/assets/js/main.6390ef24.js"></script>
 </body>
 </html>
