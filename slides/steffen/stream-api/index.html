@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.4.1">
 <title data-rh="true">Programmieren mit Java</title><meta data-rh="true" property="og:title" content="Programmieren mit Java"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jappuccini.github.io/java-docs/slides/steffen/stream-api"><meta data-rh="true" name="docusaurus_locale" content="de"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="de"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><link data-rh="true" rel="icon" href="/java-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://jappuccini.github.io/java-docs/slides/steffen/stream-api"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/stream-api" hreflang="de"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/stream-api" hreflang="x-default"><link rel="stylesheet" href="/java-docs/assets/css/styles.b59ae849.css">
-<link rel="preload" href="/java-docs/assets/js/runtime~main.6c6f82f3.js" as="script">
+<link rel="preload" href="/java-docs/assets/js/runtime~main.b595d519.js" as="script">
 <link rel="preload" href="/java-docs/assets/js/main.bb7f9fd7.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -187,10 +187,11 @@ R collect(Collector&lt;T,A,R&gt; collector)
     ArrayList&lt;Student&gt; students = getManyStudents().
       .stream()
       .collect(Collectors.toList());
-      // nur Collectors.toMap ist Klausurrelevant
+      // Collectors.toMap ist Klausurrelevant
+      // Collectors.groupingBy ist Klausurrelevant
   }
 }
-</code></pre></section><section><h2>Demo</h2><ul><li class="fragment"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Collectors.html">Collectors Klasse</a></li><li class="fragment">ArrayList to Map</li></ul></section><section><h2>Statistik</h2><p>Mit Statistik Operationen lassen sich Anzahl, Minimum, Maximum, Summe und Durchschnitt berechnen.</p></section><section><h2>Statistik - Methoden</h2><pre><code class="java">long count()
+</code></pre></section><section><h2>Demo</h2><ul><li class="fragment"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Collectors.html">Collectors Klasse</a></li><li class="fragment">Collectors.toMap</li><li class="fragment">Collectors.groupingBy</li></ul></section><section><h2>Statistik</h2><p>Mit Statistik Operationen lassen sich Anzahl, Minimum, Maximum, Summe und Durchschnitt berechnen.</p></section><section><h2>Statistik - Methoden</h2><pre><code class="java">long count()
 
 Optional&lt;T&gt; min(Comparator&lt;T&gt;)
 Optional&lt;T&gt; max(Comparator&lt;T&gt;)
@@ -228,7 +229,7 @@ LongStream   mapToLong(ToLongFunction&lt;T&gt; mapper)
 }
 </code></pre></section><section><h2>Statistik Streams - Methoden</h2><pre><code class="java">long sum()
                            
-Optional&lt;T&gt; average()
+OptionalDouble average()
 </code></pre></section><section><h2>Statistik Streams - Verwendung I</h2><pre><code class="java">public class Main {
   public static void main(String[] args) {
     IntStream manyNumbers = getManyNumbers();
@@ -254,8 +255,8 @@ Optional&lt;T&gt; average()
       .forEach(n -> System.out.println(n));
   }
 }
-</code></pre></section></section><section><h2>Rest of the Day</h2><ul><li class="fragment">Generics</li><li class="fragment">Maps</li></ul></section></div></div></div>
-<script src="/java-docs/assets/js/runtime~main.6c6f82f3.js"></script>
+</code></pre></section></section><section><h2>Rest of the Day</h2><ul><li class="fragment">Lambda Aufgaben</li><li class="fragment">Stream API Aufgaben</li></ul></section></div></div></div>
+<script src="/java-docs/assets/js/runtime~main.b595d519.js"></script>
 <script src="/java-docs/assets/js/main.bb7f9fd7.js"></script>
 </body>
 </html>
