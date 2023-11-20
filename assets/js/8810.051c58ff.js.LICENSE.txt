@@ -10,6 +10,10 @@
 	 */
 
 /*!
+	 * reveal.js plugin that adds syntax highlight support.
+	 */
+
+/*!
 	 * zoom.js 0.3 (modified for use with reveal.js)
 	 * http://lab.hakim.se/zoom-js
 	 * MIT licensed
@@ -18,11 +22,7 @@
 	 */
 
 /*!
-   * reveal.js plugin that adds syntax highlight support.
-   */
-
-/*!
-* reveal.js 4.6.0
+* reveal.js 5.0.0
 * https://revealjs.com
 * MIT licensed
 *
