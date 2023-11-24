@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjava_docs=self.webpackChunkjava_docs||[]).push([[8825],{74102:a=>{a.exports=JSON.parse('{"label":"java","permalink":"/java-docs/tags/java","allTagsPath":"/java-docs/tags","count":1,"items":[{"id":"documentation/java","title":"Die Programmiersprache Java","description":"","permalink":"/java-docs/documentation/java"}],"unlisted":false}')}}]);
