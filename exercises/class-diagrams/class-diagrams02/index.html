@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">ClassDiagrams02 | Programmieren mit Java</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jappuccini.github.io/java-docs/exercises/class-diagrams/class-diagrams02"><meta data-rh="true" property="og:locale" content="de"><meta data-rh="true" name="docusaurus_locale" content="de"><meta data-rh="true" name="docsearch:language" content="de"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ClassDiagrams02 | Programmieren mit Java"><link data-rh="true" rel="icon" href="/java-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://jappuccini.github.io/java-docs/exercises/class-diagrams/class-diagrams02"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/exercises/class-diagrams/class-diagrams02" hreflang="de"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/exercises/class-diagrams/class-diagrams02" hreflang="x-default"><link rel="stylesheet" href="/java-docs/assets/css/styles.4c18cc9f.css">
-<script src="/java-docs/assets/js/runtime~main.e52e8f81.js" defer="defer"></script>
+<script src="/java-docs/assets/js/runtime~main.1de4ef71.js" defer="defer"></script>
 <script src="/java-docs/assets/js/main.f790ede9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -16,6 +16,11 @@ an und erstelle die Klasse <code>DiceGame</code></li>
 abwechselnd mit 3 Würfeln zu würfeln. Für jedes gewürfelte Auge bekommt der
 jeweilige Spieler einen Punkt. Ziel des Spieles ist es, so nah wie möglich an
 50 Punkte heranzukommen, ohne allerdings die 50 Punkte zu überschreiten</li>
+<li>Ein Spieler kann entscheiden ob er würfeln möchte oder nicht. Entscheidet sich
+ein Spieler nicht mehr zu würfeln, kann er in der gesamten Runde nicht mehr
+würfeln.</li>
+<li>Wenn nur noch ein Spieler übrig bleibt, der nicht über 50 Punkte ist, hat
+dieser automatisch gewonnen.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="klassendiagramm">Klassendiagramm<a href="#klassendiagramm" class="hash-link" aria-label="Direkter Link zur Klassendiagramm" title="Direkter Link zur Klassendiagramm">​</a></h2>
 <!-- -->
@@ -26,7 +31,8 @@ werden.</p>
 <ul>
 <li>Der Konstruktor soll alle Attribute initialisieren</li>
 <li>Die Methode <code>void start()</code> soll die Spieler abwechselnd einen Spielzug machen
-lassen und am Ende den Sieger des Spiels auf der Konsole ausgeben</li>
+lassen und am Ende den Sieger und den Verlierer des Spiels auf der Konsole
+ausgeben</li>
 <li>Die Methode <code>void move(player: Player)</code> soll es dem Spieler ermöglichen zu
 würfeln, bzw. seinen Spielzug zu beenden</li>
 </ul>
