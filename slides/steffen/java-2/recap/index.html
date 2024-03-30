@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Programmieren mit Java</title><meta data-rh="true" property="og:title" content="Programmieren mit Java"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jappuccini.github.io/java-docs/slides/steffen/java-2/recap"><meta data-rh="true" property="og:locale" content="de"><meta data-rh="true" name="docusaurus_locale" content="de"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="de"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><link data-rh="true" rel="icon" href="/java-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://jappuccini.github.io/java-docs/slides/steffen/java-2/recap"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/java-2/recap" hreflang="de"><link data-rh="true" rel="alternate" href="https://jappuccini.github.io/java-docs/slides/steffen/java-2/recap" hreflang="x-default"><link rel="stylesheet" href="/java-docs/assets/css/styles.8e5898a9.css">
-<script src="/java-docs/assets/js/runtime~main.c12e21d9.js" defer="defer"></script>
+<script src="/java-docs/assets/js/runtime~main.164864f4.js" defer="defer"></script>
 <script src="/java-docs/assets/js/main.5e53efda.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div class="reveal reveal-viewport" style="width:100vw;height:100vh"><div class="slides"><section><section><h2>Agenda</h2><ul><li class="fragment">Wiederholung Java I</li><li class="fragment">Besprechung Klausur</li><li class="fragment">Fortgeschrittene Programmierung</li></ul></section></section><section><section><h2>Wiederholung Java I</h2></section></section><section><section><h2>Datentypen</h2></section><section><h2>Primitive Datentypen</h2><ul><li class="fragment">boolean</li><li class="fragment">byte, short, <b>int</b>, long</li><li class="fragment">float, <b>double</b></li><li class="fragment">char</li></ul></section><section><h2>Komplexe Datentypen</h2><ul><li class="fragment">String</li><li class="fragment">jede Klasse</li></ul><p class="fragment">Tipp: Primitive Datentypen haben keine Methoden</p></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Methoden</h2></section><section><pre><code class="java">public class Calculator {
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div class="reveal reveal-viewport" style="width:100vw;height:100vh"><div class="slides"><section><section><h2>Agenda</h2><ul><li class="fragment">Wiederholung</li><li class="fragment">Klausurbesprechung</li><li class="fragment">Fortgeschrittene Programmierung</li></ul></section></section><section><section><h2>Wiederholung</h2></section><section><h2>Datentypen</h2></section><section><h2>Primitive Datentypen</h2><ul><li class="fragment">boolean</li><li class="fragment">byte, short, <b>int</b>, long</li><li class="fragment">float, <b>double</b></li><li class="fragment">char</li></ul></section><section><h2>Komplexe Datentypen</h2><ul><li class="fragment">String</li><li class="fragment">jede Klasse</li></ul><p class="fragment">Tipp: Primitive Datentypen haben keine Methoden</p></section><section><h2>Methoden</h2></section><section><pre><code class="java">public class Calculator {
 
   public static int add(int x, int y) {
     return x + y;
   }
 
 }
-</code></pre><span class="fragment fade-in-then-out">Rückgabetyp</span><span class="fragment fade-in-then-out">Bezeichner</span><span class="fragment fade-in-then-out">Parameter</span><span class="fragment fade-in-then-out">Methodenrumpf</span></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Operatoren</h2></section><section><h2>Arithmetische Operatoren</h2><pre><code class="java">//...
+</code></pre><span class="fragment fade-in-then-out">Rückgabetyp</span><span class="fragment fade-in-then-out">Bezeichner</span><span class="fragment fade-in-then-out">Parameter</span><span class="fragment fade-in-then-out">Methodenrumpf</span></section><section><h2>Operatoren</h2></section><section><h2>Arithmetische Operatoren</h2><pre><code class="java">//...
   public static void main(String[] args) {
     int a = 3;
     int b = 2;
@@ -35,7 +35,7 @@
     System.out.println(a--); // Log: 4, Wert: 3
   }
 //...
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Vergleichsoperatoren</h2><pre><code class="java">//...
+</code></pre></section><section><h2>Vergleichsoperatoren</h2><pre><code class="java">//...
   public static void main(String[] args) {
     boolean result;
     result = 3 == 2; // false 
@@ -46,7 +46,7 @@
     result = 2 &lt= 2; // true 
   }
 //...
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Logische Operatoren I - AND</h2><pre><code class="java">//...
+</code></pre></section><section><h2>Logische Operatoren I - AND</h2><pre><code class="java">//...
   public static void main(String[] args) {
     boolean t = true;
     boolean f = false;
@@ -80,7 +80,7 @@
     result = !t; // false 
   }
 //...
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Kontrollstrukturen</h2></section><section><h2>if</h2><pre><code class="java">//...
+</code></pre></section><section><h2>Kontrollstrukturen</h2></section><section><h2>if</h2><pre><code class="java">//...
   public static void main(String[] args) {
     int age = 18;
 
@@ -93,7 +93,7 @@
     } 
   }
 //...
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>switch</h2><pre><code class="java">  public static void greet(String gender) {
+</code></pre></section><section><h2>switch</h2><pre><code class="java">  public static void greet(String gender) {
     switch(gender) {
       case 'm':
       case 'M':
@@ -107,7 +107,7 @@
         break; 
     }
   }
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>while-Schleife</h2><pre><code class="java">  public static boolean exists(String brand) {
+</code></pre></section><section><h2>while-Schleife</h2><pre><code class="java">  public static boolean exists(String brand) {
     String[] cars = { 'BMW', 'Audi', 'Benz' }; 
     boolean found = false; 
     int i = 0; 
@@ -155,7 +155,7 @@
     }
     return false; 
   }
-</code></pre></section><section><h2>break und continue</h2><ul><li class="fragment">break beendet die komplette Schleife</li><li class="fragment">continue überspringt den restlichen Code</li></ul></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Arrays</h2></section><section><h2>Array</h2><pre><code class="java">  public static void example() {
+</code></pre></section><section><h2>break und continue</h2><ul><li class="fragment">break beendet die komplette Schleife</li><li class="fragment">continue überspringt den restlichen Code</li></ul></section><section><h2>Arrays</h2></section><section><h2>Array</h2><pre><code class="java">  public static void example() {
     String[] cars = { 'BMW', 'Audi', 'Benz' };
     String car;
     car = cars[0]; // lesen aus dem Array
@@ -174,7 +174,7 @@
     int amountOfItems = cars.size();
     cars.remove(1); // löschen aus der Liste
   }
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klassen und Objekte</h2></section><section><h2>Klassen</h2><span class="fragment">Eine Klasse beschreibt gleichartige Objekte durch</span><ul><li class="fragment">Attribute</li><li class="fragment">Methoden</li></ul></section><section><h2>Beispiel Klasse</h2><pre><code class="java">public class Human {
+</code></pre></section><section><h2>Klassen und Objekte</h2></section><section><h2>Klassen</h2><span class="fragment">Eine Klasse beschreibt gleichartige Objekte durch</span><ul><li class="fragment">Attribute</li><li class="fragment">Methoden</li></ul></section><section><h2>Beispiel Klasse</h2><pre><code class="java">public class Human {
   public String firstName;
   public String lastName;
  
@@ -185,7 +185,7 @@
   steffen.firstName = "Steffen";
   steffen.lastName = "Merk";
   String fullName = steffen.getFullName();
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Konstruktor</h2><ul><li class="fragment">beschreibt die Initialisierung eines Objektes</li><li class="fragment">Konstruktoren können Überladen werden</li></ul></section><section><pre><code class="java">public class Car {
+</code></pre></section><section><h2>Konstruktor</h2><ul><li class="fragment">beschreibt die Initialisierung eines Objektes</li><li class="fragment">Konstruktoren können Überladen werden</li></ul></section><section><pre><code class="java">public class Car {
   private String color;
   private char engineType;
 
@@ -212,7 +212,7 @@
     this.engineType = engineType;
   }
 }
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Vererbung</h2></section><section><h2>Vererbung</h2><p>Durch <b>Generalisierung</b> werden gemeinsame Attribute und Methoden von mehreren Klassen in eine weitere Klasse ausgelagert.</p></section><section><pre><code class="java">public class Dog {
+</code></pre></section><section><h2>Vererbung</h2></section><section><h2>Vererbung</h2><p>Durch <b>Generalisierung</b> werden gemeinsame Attribute und Methoden von mehreren Klassen in eine weitere Klasse ausgelagert.</p></section><section><pre><code class="java">public class Dog {
   public String name;
   public Dog(String name) {
     this.name = name;
@@ -243,7 +243,7 @@ public class Cat extends Animal {
     super(name);
   }
 }
-</code></pre></section><section><h2>Schlüsselwörter zur Vererbung</h2><ul><li class="fragment">extends</li><li class="fragment">super</li></ul></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Polymorphie</h2></section><section><h2>Polymorphie</h2><p class="fragment">Eine Referenzvariable, die vom Typ einer generalisierten Klasse ist, kann mehrere (poly) Formen annehmen (Unterklassen).</p><p class="fragment">Eine Referenzvariable vom Typ Animal kann eine Katze oder ein Hund sein.</p></section><section><h2>Upcast</h2><p class="fragment">Der Referenzvariable einer Oberklasse wird eine Referenzvariable einer Unterklasse zugewiesen.</p><pre class="fragment"><code class="java">Animal animal01 = new Cat();
+</code></pre></section><section><h2>Schlüsselwörter zur Vererbung</h2><ul><li class="fragment">extends</li><li class="fragment">super</li></ul></section><section><h2>Polymorphie</h2></section><section><h2>Polymorphie</h2><p class="fragment">Eine Referenzvariable, die vom Typ einer generalisierten Klasse ist, kann mehrere (poly) Formen annehmen (Unterklassen).</p><p class="fragment">Eine Referenzvariable vom Typ Animal kann eine Katze oder ein Hund sein.</p></section><section><h2>Upcast</h2><p class="fragment">Der Referenzvariable einer Oberklasse wird eine Referenzvariable einer Unterklasse zugewiesen.</p><pre class="fragment"><code class="java">Animal animal01 = new Cat();
 Animal animal02 = new Dog();
 </code></pre></section><section><p>Ist eine Referenzvariable vom Typ einer generalisierten Klasse, können nur die Methoden der generalisierten Klasse verwendet werden.</p><pre><code class="java">Animal animal01 = new Dog();
 animal01.name = 'Bello'; // funktioniert
@@ -256,7 +256,7 @@ if (animal01 instanceof Dog) {
    // hundespezifischer Quellcode
    Dog bello = (Dog) animal01;
    bello.bark();
-}</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Modifier</h2></section><section><h2>Public Modifier - Klasse</h2><pre><code class="java">public class Dog {
+}</code></pre></section><section><h2>Modifier</h2></section><section><h2>Public Modifier - Klasse</h2><pre><code class="java">public class Dog {
   //...
 }
 </code></pre><p>Klasse kann überall im Projekt verwendet werden.</p></section><section><h2>Kein Modifier - Klasse</h2><pre><code class="java">class Dog {
@@ -268,7 +268,7 @@ if (animal01 instanceof Dog) {
 </code></pre><p>Ein Objekt dieser Klasse kann nicht instanziiert werden.</p></section><section><h2>Final Modifier - Klasse</h2><pre><code class="java">public final class Dog {
   //...
 }
-</code></pre><p>Von dieser Klasse kann nicht geerbt werden.</p></section><section><h2>Frag jetzt!</h2></section><section><h2>Public Modifier - Attribut</h2><pre><code class="java">public class Dog {
+</code></pre><p>Von dieser Klasse kann nicht geerbt werden.</p></section><section><h2>Public Modifier - Attribut</h2><pre><code class="java">public class Dog {
   public String name;
   //...
 }
@@ -353,7 +353,7 @@ public class MonsterDog extends Dog {
  }
  //...
 }
-</code></pre></section><section><h2>Frag jetzt!</h2></section><section><h2>Public Modifier - Methode</h2><pre><code class="java">public class Dog {
+</code></pre></section><section><h2>Public Modifier - Methode</h2><pre><code class="java">public class Dog {
   public void bark() {
     //...
   }
@@ -441,7 +441,7 @@ public class MonsterDog extends Dog {
 </code></pre><p>Die Methode muss von der erbenden Klasse implementiert werden. Abstrakte Methoden können nur in abstrakten Klassen definiert werden.</p></section><section><pre><code class="java">public class MonsterDog extends Dog {
  // funktioniert nicht, makeSound muss implementiert werden
 }
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Enumeration</h2></section><section><h2>Enumeration</h2><p>Eine Enumeration ist eine Klasse mit Attributen und Methoden. Sie definiert zusätzlich alle möglichen Ausprägungen dieser Klasse.</p></section><section><h2>Enumeration implementieren</h2><pre><code class="java">public enum Gender {
+</code></pre></section><section><h2>Enumeration</h2></section><section><h2>Enumeration</h2><p>Eine Enumeration ist eine Klasse mit Attributen und Methoden. Sie definiert zusätzlich alle möglichen Ausprägungen dieser Klasse.</p></section><section><h2>Enumeration implementieren</h2><pre><code class="java">public enum Gender {
  MALE("Mann"),
  FEMALE("Frau"),
  DIVERS("Divers");
@@ -468,7 +468,7 @@ public class MonsterDog extends Dog {
  }
 }
 </code></pre></section><section><h2>Enumeration als Wert setzen</h2><pre><code class="java">Human steffen = new Human(Gender.MALE);
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Interfaces</h2></section><section><h2>Interfaces</h2><p>Definieren Attribute und Methoden unabhängig von der Vererbungshierarchie.</p><p class="fragment">Dient als Schnittstelle zwischen Ersteller und Verwender einer Funktionalität.</p></section><section><h2>Interface (Ersteller)</h2><pre><code data-line-numbers="1-3|6|7,11" class="java">public interface Item {
+</code></pre></section><section><h2>Interfaces</h2></section><section><h2>Interfaces</h2><p>Definieren Methoden unabhängig von der Vererbungshierarchie.</p><p class="fragment">Dient als Schnittstelle zwischen Ersteller und Verwender einer Funktionalität.</p></section><section><h2>Interface (Ersteller)</h2><pre><code data-line-numbers="1-3|6|7,11" class="java">public interface Item {
   public String getName(); 
 }
 
@@ -500,7 +500,7 @@ public class ShoppingList {
 Human steffen = new Human("Steffen", "Merk");
 shoppingList.add(steffen);
 shoppingList.print(); // "Steffen Merk"
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Comparator</h2></section><section><h2>Comparator</h2><p class="fragment">Definiert wie eine Liste von Elementen sortiert wird.</p><p class="fragment">Vergleicht immer zwei Elemente miteinander, bei dem angegeben wird, wo das erste Element im Vergleich zum zweiten Element positioniert wird (Zahlenstrahl).</p></section><section><h2>Comparator implementieren</h2><pre><code class="java">public class AgeAscComparator implements Comparator&lt;Human&gt; {
+</code></pre></section><section><h2>Comparator</h2></section><section><h2>Comparator</h2><p class="fragment">Definiert wie eine Liste von Elementen sortiert wird.</p><p class="fragment">Vergleicht immer zwei Elemente miteinander, bei dem angegeben wird, wo das erste Element im Vergleich zum zweiten Element positioniert wird (Zahlenstrahl).</p></section><section><h2>Comparator implementieren</h2><pre><code class="java">public class AgeAscComparator implements Comparator&lt;Human&gt; {
   
   public int compare(Human h1, Human h2) {
     if(h1.getAge() > h2.getAge()) {
@@ -516,7 +516,7 @@ shoppingList.print(); // "Steffen Merk"
 developers.add(new Human(28));
 developers.add(new Human(24));
 Collections.sort(developers, new AgeAscComparator());
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Exceptions</h2></section><section><h2>Exceptions</h2><p class="fragment">Sind Fehler, die während der Ausführung des Programms auftreten können und dienen zur Kommunikation.</p><p class="fragment">Fehler können mitgeteilt (throws) und verarbeitet werden (catch).</p></section><section><h2>Exception implementieren</h2><pre><code data-line-numbers="1-9|1|6" class="java">public class TooYoungException extends Exception {
+</code></pre></section><section><h2>Exceptions</h2></section><section><h2>Exceptions</h2><p class="fragment">Sind Fehler, die während der Ausführung des Programms auftreten können und dienen zur Kommunikation.</p><p class="fragment">Fehler können mitgeteilt (throws) und verarbeitet werden (catch).</p></section><section><h2>Exception implementieren</h2><pre><code data-line-numbers="1-9|1|6" class="java">public class TooYoungException extends Exception {
   
   public final int yearsTillAllowed;
   
@@ -547,6 +547,6 @@ Collections.sort(developers, new AgeAscComparator());
     }
   }
 }
-</code></pre></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klassendiagramme (Doku)</h2></section><section><h2>Frag jetzt!</h2></section></section><section><section><h2>Klausurbesprechung</h2></section></section><section><section><h2>Fortgeschrittene Programmierung</h2><ul><li class="fragment">Generische Programmierung</li><li class="fragment">Funktionale Programmierung</li><li class="fragment">Algorithmen und Datenstrukturen</li></ul></section></section><section><section><h2>Rest of the day</h2><ul><li class="fragment">Wiederholung Java I</li><li class="fragment">Entwicklungsumgebung einrichten</li></ul></section></section></div></div></div>
+</code></pre></section><section><h2>Klassendiagramme (Doku)</h2></section></section><section><section><h2>Klausurbesprechung</h2></section></section><section><section><h2>Fortgeschrittene Programmierung</h2><ul><li class="fragment">Generische Programmierung</li><li class="fragment">Funktionale Programmierung</li><li class="fragment">Algorithmen und Datenstrukturen</li></ul></section></section><section><section><h2>Rest of the day</h2><ul><li class="fragment">Wiederholung</li><li class="fragment">Entwicklungsumgebung einrichten</li></ul></section></section></div></div></div>
 </body>
 </html>
