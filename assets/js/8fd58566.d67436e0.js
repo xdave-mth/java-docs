@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjava_docs=self.webpackChunkjava_docs||[]).push([[8763],{48002:a=>{a.exports=JSON.parse('{"label":"object","permalink":"/java-docs/tags/object","allTagsPath":"/java-docs/tags","count":1,"items":[{"id":"documentation/object","title":"Die Mutter aller Klassen","description":"","permalink":"/java-docs/documentation/object"}],"unlisted":false}')}}]);
