@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjava_docs=self.webpackChunkjava_docs||[]).push([[5263],{33639:a=>{a.exports=JSON.parse('{"label":"data-types","permalink":"/java-docs/tags/data-types","allTagsPath":"/java-docs/tags","count":1,"items":[{"id":"documentation/data-types","title":"Datentypen","description":"","permalink":"/java-docs/documentation/data-types"}],"unlisted":false}')}}]);
